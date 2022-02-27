@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "rvoa0eptbqniKwdktp8mK+kevz7Qu0BbR6jQFJDd6NT0UvvAUZhOOXEKhk4jwRJHgoTJq8tgT/LbSRU1Hp9drA==",
+  "dgSpecHash": "Bormh2DjEm06yjkic0tLGW8a3oy5ei+QVN8uytPjjXaASz91vMPfueA9b5xuToZpm9SjGi+5hXhlZDSskOrJdw==",
   "success": true,
   "projectFilePath": "C:\\Users\\63976\\OOP\\QRCode\\QRCode\\QRCode.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\63976\\.nuget\\packages\\aforge\\2.2.5\\aforge.2.2.5.nupkg.sha512",
     "C:\\Users\\63976\\.nuget\\packages\\aforge.video\\2.2.5\\aforge.video.2.2.5.nupkg.sha512",
     "C:\\Users\\63976\\.nuget\\packages\\aforge.video.directshow\\2.2.5\\aforge.video.directshow.2.2.5.nupkg.sha512",
-    "C:\\Users\\63976\\.nuget\\packages\\zxing.net\\0.16.8\\zxing.net.0.16.8.nupkg.sha512"
+    "C:\\Users\\63976\\.nuget\\packages\\zxing.net\\0.16.6\\zxing.net.0.16.6.nupkg.sha512"
   ],
   "logs": [
     {

@@ -6,6 +6,17 @@
   "compilationOptions": {},
   "targets": {
     ".NETCoreApp,Version=v6.0": {
+      "QRCode/1.0.0": {
+        "dependencies": {
+          "AForge": "2.2.5",
+          "AForge.Video": "2.2.5",
+          "AForge.Video.DirectShow": "2.2.5",
+          "ZXing.Net": "0.16.6"
+        },
+        "runtime": {
+          "QRCode.dll": {}
+        }
+      },
       "AForge/2.2.5": {
         "runtime": {
           "lib/AForge.dll": {
@@ -47,6 +58,11 @@
     }
   },
   "libraries": {
+    "QRCode/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
     "AForge/2.2.5": {
       "type": "package",
       "serviceable": true,
