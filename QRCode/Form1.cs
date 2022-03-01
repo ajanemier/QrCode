@@ -22,6 +22,7 @@ namespace QRCode
         public Form1()
         {
             InitializeComponent();
+      
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -63,21 +64,48 @@ namespace QRCode
             {
             string decoded = result.ToString().Trim();
             if (decoded !="")
-            {
-            textBox1.Text = decoded;
-                    }
-               }
+                {
+                    richTextBox1.Text = decoded;
+                }
+            }
 
             catch(Exception ex)
             { }
         }
 
+        public string Data
+        {
+            get { return richTextBox1.Text; }
+        }
+
         private void btnRead_Click(object sender, EventArgs e)
         {
             timer1.Start();
-           
+            MessageBox.Show("QR Code information saved in txt file");
+            string fileName = @"C:\Users\63976\OOP\QRCode\QRCodefile.txt";
+            FileInfo fi = new FileInfo(fileName);
+
+            try
+            {
+                
+                if (fi.Exists)
+                {
+                    fi.Delete();
+                }
 
 
+                using (StreamWriter sw = fi.CreateText())
+
+                {
+                    sw.Write(DateTime.Now.ToString() + "\n");
+                    sw.Write(richTextBox1.Text);
+
+                }
+
+
+            }
+            catch (Exception Ex)
+            { }
         }
     }
 }
